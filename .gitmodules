@@ -1,0 +1,9 @@
+[submodule "vendor/github.com/blang/semver"]
+	path = vendor/github.com/blang/semver
+	url = https://github.com/blang/semver
+[submodule "vendor/github.com/onsi/ginkgo"]
+	path = vendor/github.com/onsi/ginkgo
+	url = https://github.com/onsi/ginkgo
+[submodule "vendor/github.com/onsi/gomega"]
+	path = vendor/github.com/onsi/gomega
+	url = https://github.com/onsi/gomega

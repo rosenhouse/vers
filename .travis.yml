@@ -1,0 +1,14 @@
+language: go
+
+matrix:
+  include:
+   - go: 1.6.2
+
+env:
+  global:
+   - PATH=$GOROOT/bin:$PATH
+
+install:
+  - go install ./vendor/github.com/onsi/ginkgo/ginkgo
+
+script: $GOROOT/bin/ginkgo -p -r --randomizeAllSpecs --randomizeSuites --race --trace
