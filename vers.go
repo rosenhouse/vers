@@ -28,9 +28,6 @@ import (
 	"github.com/blang/semver"
 )
 
-// Spec represents the semantic version of the plugin specification
-type Spec semver.Version
-
 var ErrorIncompatible = errors.New("incompatible versions")
 
 // RuntimeMode represents one (of possibly several) modes of operation
