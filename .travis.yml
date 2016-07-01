@@ -6,9 +6,9 @@ matrix:
 
 env:
   global:
-   - PATH=$GOROOT/bin:$PATH
+   - PATH=$GOPATH/bin:$PATH
 
 install:
   - go install ./vendor/github.com/onsi/ginkgo/ginkgo
 
-script: $GOROOT/bin/ginkgo -p -r --randomizeAllSpecs --randomizeSuites --race --trace
+script: ginkgo -p -r --randomizeAllSpecs --randomizeSuites --race --trace
